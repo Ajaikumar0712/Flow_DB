@@ -1,0 +1,3 @@
+{"id":"3593fc89-5bf2-47fb-885b-a1ab671b46b9","updated_at":"2026-03-11T13:40:50.358175800Z","deleted":false,"fields":{"id":1,"name":"Widget","price":9.99},"xmin":0,"xmax":0}
+{"id":"4e325021-dd1a-4205-aa58-40a0a52bc671","updated_at":"2026-03-11T13:40:50.531138500Z","deleted":false,"fields":{"name":"Gadget","price":24.99,"id":2},"xmin":0,"xmax":0}
+{"id":"52b4aef9-737b-4a2a-aeb5-7a30966d34db","updated_at":"2026-03-11T13:40:50.703149800Z","deleted":false,"fields":{"price":4.49,"name":"Doohickey","id":3},"xmin":0,"xmax":0}

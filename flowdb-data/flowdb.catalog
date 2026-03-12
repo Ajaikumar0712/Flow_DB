@@ -1,0 +1,170 @@
+{
+  "tables": {
+    "users": {
+      "schema": {
+        "name": "users",
+        "columns": [
+          {
+            "name": "id",
+            "data_type": "Int",
+            "nullable": false,
+            "primary_key": true
+          },
+          {
+            "name": "name",
+            "data_type": "Text",
+            "nullable": true,
+            "primary_key": false
+          },
+          {
+            "name": "age",
+            "data_type": "Int",
+            "nullable": true,
+            "primary_key": false
+          },
+          {
+            "name": "active",
+            "data_type": "Bool",
+            "nullable": true,
+            "primary_key": false
+          }
+        ]
+      },
+      "extra_indexes": [
+        "name"
+      ]
+    },
+    "docs": {
+      "schema": {
+        "name": "docs",
+        "columns": [
+          {
+            "name": "id",
+            "data_type": "Int",
+            "nullable": false,
+            "primary_key": true
+          },
+          {
+            "name": "title",
+            "data_type": "Text",
+            "nullable": true,
+            "primary_key": false
+          },
+          {
+            "name": "body",
+            "data_type": "Text",
+            "nullable": true,
+            "primary_key": false
+          }
+        ]
+      },
+      "extra_indexes": []
+    },
+    "items": {
+      "schema": {
+        "name": "items",
+        "columns": [
+          {
+            "name": "id",
+            "data_type": "Int",
+            "nullable": false,
+            "primary_key": true
+          },
+          {
+            "name": "label",
+            "data_type": "Text",
+            "nullable": true,
+            "primary_key": false
+          },
+          {
+            "name": "embedding",
+            "data_type": "Vector",
+            "nullable": true,
+            "primary_key": false
+          }
+        ]
+      },
+      "extra_indexes": []
+    },
+    "audit": {
+      "schema": {
+        "name": "audit",
+        "columns": [
+          {
+            "name": "id",
+            "data_type": "Int",
+            "nullable": false,
+            "primary_key": true
+          },
+          {
+            "name": "event",
+            "data_type": "Text",
+            "nullable": true,
+            "primary_key": false
+          }
+        ]
+      },
+      "extra_indexes": []
+    },
+    "products": {
+      "schema": {
+        "name": "products",
+        "columns": [
+          {
+            "name": "id",
+            "data_type": "Int",
+            "nullable": false,
+            "primary_key": true
+          },
+          {
+            "name": "name",
+            "data_type": "Text",
+            "nullable": true,
+            "primary_key": false
+          },
+          {
+            "name": "price",
+            "data_type": "Float",
+            "nullable": true,
+            "primary_key": false
+          }
+        ]
+      },
+      "extra_indexes": [
+        "price"
+      ]
+    },
+    "follows": {
+      "schema": {
+        "name": "follows",
+        "columns": [
+          {
+            "name": "id",
+            "data_type": "Int",
+            "nullable": false,
+            "primary_key": true
+          },
+          {
+            "name": "from_id",
+            "data_type": "Int",
+            "nullable": true,
+            "primary_key": false
+          },
+          {
+            "name": "to_id",
+            "data_type": "Int",
+            "nullable": true,
+            "primary_key": false
+          },
+          {
+            "name": "since",
+            "data_type": "Text",
+            "nullable": true,
+            "primary_key": false
+          }
+        ]
+      },
+      "extra_indexes": []
+    }
+  }
+}
